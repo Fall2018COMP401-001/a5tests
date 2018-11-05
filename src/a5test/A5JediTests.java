@@ -42,7 +42,7 @@ public class A5JediTests {
 	}
 
 	@Test
-	public void confirmPixelArrayLocationInHeirarchyTest() {
+	public void confirmPixelArrayLocationInHierarchyTest() {
 		Class<?> pa_picture = PixelArrayPicture.class;
 		Field[] fields = pa_picture.getDeclaredFields();
 		Class<?> pixel_double_array_class = Pixel[][].class;
