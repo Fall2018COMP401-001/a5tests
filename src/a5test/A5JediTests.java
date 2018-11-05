@@ -69,7 +69,7 @@ public class A5JediTests {
 	}
 
 	@Test
-	public void confirmCaptionGetterAndSetterInHeirarchyTest() {
+	public void confirmCaptionGetterAndSetterInHierarchyTest() {
 		Class<?> picture_impl = PictureImpl.class;
 
 		try {
@@ -115,7 +115,7 @@ public class A5JediTests {
 	}
 	
 	@Test
-	public void confirmGeometryGettersInHeirarchyTest() {
+	public void confirmGeometryGettersInHierarchyTest() {
 		Class<?> picture_impl = PictureImpl.class;
 		Class<?> pa_picture = PixelArrayPicture.class;
 		Class<?> mpa_picture = MutablePixelArrayPicture.class;
