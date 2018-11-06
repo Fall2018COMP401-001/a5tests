@@ -30,12 +30,12 @@ public class A5JediTests {
 	@Test
 	public void confirmNoFieldsInPixelArrayClassesTest() {
 		Class<?> mpa_picture = MutablePixelArrayPicture.class;
-		Field[] fields = mpa_picture.getFields();						
+		Field[] fields = mpa_picture.getDeclaredFields();						
 		if (fields.length != 0) {
 			fail("Expected MutablePixelArrayPicture to have no instance fields");
 		}
 		Class<?> ipa_picture = ImmutablePixelArrayPicture.class;
-		fields = mpa_picture.getDeclaredFields();						
+		fields = ipa_picture.getDeclaredFields();						
 		if (fields.length != 0) {
 			fail("Expected ImmutablePixelArrayPicture to have no instance fields");
 		}
